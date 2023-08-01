@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-import IDate from "../DataObjects/IDate";
 import "../styles/Timer.css";
-
-const FIRST_DATE = new Date("2023, 06, 28, 14, 0, 0");
 
 function Timer() {
   const [dateTime, setDateTime] = useState(false);
@@ -12,7 +9,7 @@ function Timer() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("07/28/2023 14:00:00");
+    const target = new Date("08/26/2023 18:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();

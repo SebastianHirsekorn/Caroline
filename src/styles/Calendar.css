@@ -1,0 +1,20 @@
+.Calendar {
+    width: 90%;
+    height: 70%;
+    color: green;
+    margin: auto;
+}
+
+
+.react-calendar__tile {
+    height: 12vh;
+}
+
+.react-calendar__tile--selected {
+    background-color: violet;
+}
+
+.react-calendar__tile--now {
+    color: red;
+    background-color: green;
+}
