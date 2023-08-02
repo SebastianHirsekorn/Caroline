@@ -1,20 +1,44 @@
 .Calendar {
-    width: 90%;
-    height: 70%;
-    color: green;
-    margin: auto;
+  width: 90%;
+  height: 75%;
+  color: black;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.9);
 }
 
-
 .react-calendar__tile {
-    height: 12vh;
+  height: 10vh;
 }
 
 .react-calendar__tile--selected {
-    background-color: violet;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border: 2px solid rgb(216, 215, 215) !important;
+  border-radius: 5px;
 }
 
 .react-calendar__tile--now {
-    color: red;
-    background-color: green;
+  color: black;
+  border: 2px solid rgb(66, 66, 66) !important;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.react-calendar__tile--active {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: red !important;
+}
+
+/*hover over tile*/
+.react-calendar__tile:enabled:hover{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.react-calendar__tile:enabled:focus {
+    background-color: rgba(0, 0, 0, 0);
 }

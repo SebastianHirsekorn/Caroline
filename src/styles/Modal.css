@@ -1,0 +1,33 @@
+.Modal {
+  width: 70vw;
+  height: 50vh;
+}
+
+.Title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.closeIcon:hover {
+  cursor: pointer;
+}
+
+.ModalContentContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(174, 128, 218);
+}
+
+.ModalDataContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(223, 162, 162);
+}
+
+.ModalStuffContainer {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  background-color: bisque;
+}

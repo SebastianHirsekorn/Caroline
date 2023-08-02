@@ -3,14 +3,14 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import MenuIcon from "@mui/icons-material/Menu";
+import AccessTime from "@mui/icons-material/AccessTime";
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import ImageIcon from '@mui/icons-material/Image';
+import MenuIcon from '@mui/icons-material/Menu';
 import "../styles/Drawer.css";
 
 interface IDrawer {
@@ -41,6 +41,19 @@ export default function NavDrawer(props: IDrawer) {
       setOpen(open);
     };
 
+  function getIcon(index: number) {
+    switch (index) {
+      case 0:
+        return <AccessTime></AccessTime>
+      case 1:
+        return <CalendarMonthIcon></CalendarMonthIcon>
+      case 2:
+        return <ImageIcon></ImageIcon>
+      default:
+        break;
+    }
+  }
+
   const list = () => (
     <Box
       sx={{ width: 250 }}
@@ -53,22 +66,9 @@ export default function NavDrawer(props: IDrawer) {
           <ListItem key={item.text} disablePadding>
             <ListItemButton onClick={() => props.handlePageChange(item.page)}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {getIcon(index)}
               </ListItemIcon>
               <ListItemText primary={item.text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
