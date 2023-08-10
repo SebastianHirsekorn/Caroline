@@ -5,7 +5,8 @@ function Album() {
 
   return (
     <div className="container" id="container">
-      <ImageGallery></ImageGallery>
+      {/* <ImageGallery></ImageGallery> */}
+      <h1>TO-DO</h1>
     </div>
   );
 }

@@ -6,8 +6,10 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import "../styles/Modal.css"
 import ModalContent from './ModalContent';
+import IEvent from '../DataObjects/IEvent';
 
-type event = { title: String, date: { start: Date, end: Date }, location: String }
+
+type event = IEvent;
 
 interface IModalProps {
     open: boolean;
@@ -48,7 +50,7 @@ export default function ScrollDialog(props: IModalProps) {
                     >
                         <CloseIcon />
                     </IconButton></div>} />
-                <DialogContent dividers={true}><ModalContent></ModalContent></DialogContent>
+                <DialogContent dividers={true}><ModalContent event={props.event}></ModalContent></DialogContent>
             </Dialog>
         </div>
     );

@@ -1,0 +1,67 @@
+{
+    "events": [
+        {
+            "title": "Our first date",
+            "date": {
+                "start": "07/28/2023 0:00:00",
+                "end": "07/30/2023 23:59:59"
+            },
+            "location": "Halle (Saale)",
+            "img": "halle",
+            "eventEntries": [
+                {
+                    "title": "Nervous Rex",
+                    "desc": "It was the first time I actually got to see you and I was so happy to see you. I think the first thing you said to me was that you complained about me being impatient while you very my cute Nervous-Rex. Well you know what? I was nervous too but you looked oh so beautiful and I loved the fact that you were so shy whenever I looked at you. That all went away though when I took your hand and after that everything was alright."
+                },
+                {
+                    "title": "The great chase",
+                    "desc": "Although I was really tired during our walk together on friday there were still some highlights that made my heart race. Some more naughty than others but what happens in the woods stays in the woods. After the naughtiness we finally arrived at one of my favourite places in Halle. There he was! The evil little nutria who would chase me around."
+                },
+                {
+                    "title": "A promise",
+                    "desc": "How could I not talk about our first bbq? You looked so beautiful when you were sitting outside and doing your lesson on Duolingo. I wish we could spend every day like that. Of course I didn't forget the wish my Prinzessin whispered into my ears. My Baby will get a bbq everytime she visits me in Halle and of ourse we will try a different type of potato salad every time."
+                },
+                {
+                    "title": "Cuddling with a smoothie",
+                    "desc": "It doesn't really matter where we are does it? We are close an intimate anyways. If it's in bed or infront of a smoothie shop I can't really keep my hands off of you. The smoothie was delicious but seeing you smile made it a lasting memory."
+                },
+                {
+                    "title": "A good housewife",
+                    "desc": "Well that evening was full of suprises. Firstly who would've thought that you were the perfect housewife? I'm not gonna go into detail but there are certain perks while standing behind you. We made a pretty damn good lasagne and I had a great time cooking with you! We really need to have regular cooking dates. Wearing dresses in the process is appreciated."
+                },
+                {
+                    "title": "The Ryanair guy",
+                    "desc": "Sadly every great time has to end but this only makes it sweeter when we get to see each other again. Well our first good bye definitely didn't go as smootly as expected and you there was a certain person you definitely couldn't stand. I'm glad it happened even though you were understandably really annoyed at the time. This way we got to spend more time together and again - like at the smoothie place - it doesnt matter where we are we had a great time and I could hold you close. A little bit more time with my little girl."
+                }
+            ]
+        },
+        {
+            "title": "The time we got to witness football history",
+            "date": {
+                "start": "08/26/2023 0:00:00",
+                "end": "08/28/2023 23:59:59"
+            },
+            "location": "Dortmund",
+            "img": "dortmund",
+            "eventEntries": [
+                {
+                    "title": "1",
+                    "desc": "desc"
+                }
+            ]
+        },
+        {
+            "title": "Our first time in London together",
+            "date": {
+                "start": "09/06/2023 0:00:00",
+                "end": "09/17/2023 23:59:59"
+            },
+            "location": "London",
+            "img": "london",
+            "eventEntries": [
+                {"title": "1",
+                "desc": "desc"}
+            ]
+        }
+    ]
+}
