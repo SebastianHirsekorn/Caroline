@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -11,13 +11,10 @@ import AccessTime from "@mui/icons-material/AccessTime";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import ImageIcon from '@mui/icons-material/Image';
 import MenuIcon from '@mui/icons-material/Menu';
-import LogoutIcon from '@mui/icons-material/Logout';
 import "../styles/Drawer.css";
-import { Divider } from "@mui/material";
 
 interface IDrawer {
   handlePageChange: (page: page) => void;
-  signOut: () => void;
 }
 
 type page = "Countdown" | "Calendar" | "Album";
@@ -28,7 +25,7 @@ export default function NavDrawer(props: IDrawer) {
   const pages: { text: string; page: page }[] = [
     { text: "Countdown", page: "Countdown" },
     { text: "Calendar", page: "Calendar" },
-    { text: "Todo", page: "Album" },
+    { text: "Album", page: "Album" },
   ];
 
   const toggleDrawer =
@@ -75,17 +72,6 @@ export default function NavDrawer(props: IDrawer) {
             </ListItemButton>
           </ListItem>
         ))}
-      </List>
-      <Divider />
-      <List>
-        <ListItem key={0} disablePadding>
-          <ListItemButton onClick={() => props.signOut()}>
-            <ListItemIcon>
-              <LogoutIcon></LogoutIcon>
-            </ListItemIcon>
-            <ListItemText primary="Log out" />
-          </ListItemButton>
-        </ListItem>
       </List>
     </Box>
   );
